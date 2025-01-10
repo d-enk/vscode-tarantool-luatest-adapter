@@ -359,6 +359,10 @@ async function runTestGroups(
 			}
 		}
 
+		if (event.message) {
+			event.message += "\n";
+		}
+
 		testStatesEmitter.fire(event);
 	}
 }
